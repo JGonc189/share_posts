@@ -6,7 +6,8 @@
     
     public function index(){
       $data = [
-        'title' => 'TraversyMVC',
+        'title' => 'SharePosts',
+        'description' => 'Simple social network built with a custom MVC php Framework'
       ];
      
       $this->view('pages/index', $data);
@@ -14,7 +15,8 @@
 
     public function about(){
       $data = [
-        'title' => 'About Us'
+        'title' => 'About Us',
+        'description' => 'An App to share posts with other users!'
       ];
 
       $this->view('pages/about', $data);
