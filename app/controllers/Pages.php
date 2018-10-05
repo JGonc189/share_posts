@@ -4,7 +4,11 @@
      
     }
     
-    public function index(){
+    public function index(){  
+      if(isLoggedIn()) {
+        redirect('posts');
+      }
+
       $data = [
         'title' => 'SharePosts',
         'description' => 'Simple social network built with a custom MVC php Framework'
