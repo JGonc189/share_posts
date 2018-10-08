@@ -174,6 +174,4 @@
       session_destroy();
       redirect('users/login');
     }
-
-   
   }
